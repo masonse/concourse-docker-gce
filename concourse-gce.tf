@@ -75,7 +75,6 @@ resource "google_compute_instance" "default" {
 #Set external URL for concourse and add our user to the docker user group
 	provisioner "remote-exec" {
 		inline = [
-# 5 hours to get this POS line....
 			"echo '${format("export CONCOURSE_EXTERNAL_URL=http://%s", self.network_interface.0.access_config.0.assigned_nat_ip)}' >> .bashrc",
       "sudo usermod -aG docker $(whoami)"
 			
