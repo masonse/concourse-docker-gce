@@ -1,0 +1,5 @@
+This file should be a json for the GCE service account used to access GCE APIs.
+
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances
+
+
