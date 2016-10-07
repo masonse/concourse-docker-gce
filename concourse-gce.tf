@@ -6,7 +6,7 @@ provider "google" {
 }
 
 
-#Create 3 centos7 nodes
+#Create 1 centos7 nodes
 resource "google_compute_instance" "default" {
   count = 1
 
