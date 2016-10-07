@@ -91,7 +91,7 @@ resource "google_compute_instance" "default" {
 #Start up concourse
 	provisioner "remote-exec" {
 		inline = [
-		"docker-compose up"
+		"docker-compose up -d"
 		]
 	}
 
